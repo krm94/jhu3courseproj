@@ -1,4 +1,4 @@
-# README
+#jhu3courseproj
 
 The run_analysis.R script does the following function to messy dataset downloaded from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" :- 
 
