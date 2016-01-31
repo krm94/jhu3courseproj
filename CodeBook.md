@@ -1,166 +1,165 @@
 #CodeBook
 
-##Variables 
-
+##Variables of the tidy data set
  1
- "Subject"
+ "Subject" <br >
  2
- "activity_id"
+ "activity_id" <br >
  3
- "tBodyAcc-mean()-X"
+ "tBodyAcc-mean()-X" <br >
  4
- "tBodyAcc-mean()-Y"
+ "tBodyAcc-mean()-Y" <br >
  5
- "tBodyAcc-mean()-Z"
+ "tBodyAcc-mean()-Z" <br >
  6
- "tBodyAcc-std()-X"
+ "tBodyAcc-std()-X" <br >
  7
- "tBodyAcc-std()-Y"
+ "tBodyAcc-std()-Y" <br >
  8
- "tBodyAcc-std()-Z"
+ "tBodyAcc-std()-Z" <br >
  9
- "tGravityAcc-mean()-X"
+ "tGravityAcc-mean()-X" <br >
  10
- "tGravityAcc-mean()-Y"
+ "tGravityAcc-mean()-Y" <br >
  11
- "tGravityAcc-mean()-Z"
+ "tGravityAcc-mean()-Z" <br >
  12
- "tGravityAcc-std()-X"
+ "tGravityAcc-std()-X" <br >
  13
- "tGravityAcc-std()-Y"
+ "tGravityAcc-std()-Y" <br >
  14
- "tGravityAcc-std()-Z"
+ "tGravityAcc-std()-Z" <br >
  15
- "tBodyAccJerk-mean()-X"
+ "tBodyAccJerk-mean()-X" <br >
  16
- "tBodyAccJerk-mean()-Y"
+ "tBodyAccJerk-mean()-Y" <br >
  17
- "tBodyAccJerk-mean()-Z"
+ "tBodyAccJerk-mean()-Z" <br >
  18
- "tBodyAccJerk-std()-X"
+ "tBodyAccJerk-std()-X" <br >
  19
- "tBodyAccJerk-std()-Y"
+ "tBodyAccJerk-std()-Y" <br >
  20
- "tBodyAccJerk-std()-Z"
+ "tBodyAccJerk-std()-Z" <br >
  21
- "tBodyGyro-mean()-X"
+ "tBodyGyro-mean()-X" <br >
  22
- "tBodyGyro-mean()-Y"
+ "tBodyGyro-mean()-Y" <br >
  23
- "tBodyGyro-mean()-Z"
+ "tBodyGyro-mean()-Z" <br >
  24
- "tBodyGyro-std()-X"
+ "tBodyGyro-std()-X" <br > 
  25
- "tBodyGyro-std()-Y"
+ "tBodyGyro-std()-Y" <br >
  26
- "tBodyGyro-std()-Z"
+ "tBodyGyro-std()-Z" <br >
  27
- "tBodyGyroJerk-mean()-X"
+ "tBodyGyroJerk-mean()-X" <br >
  28
- "tBodyGyroJerk-mean()-Y"
+ "tBodyGyroJerk-mean()-Y" <br >
  29
- "tBodyGyroJerk-mean()-Z"
+ "tBodyGyroJerk-mean()-Z" <br >
  30
- "tBodyGyroJerk-std()-X"
+ "tBodyGyroJerk-std()-X" <br >
  31
- "tBodyGyroJerk-std()-Y"
+ "tBodyGyroJerk-std()-Y" <br >
  32
- "tBodyGyroJerk-std()-Z"
+ "tBodyGyroJerk-std()-Z" <br >
  33
- "tBodyAccMag-mean()"
+ "tBodyAccMag-mean()" <br >
  34
- "tBodyAccMag-std()"
+ "tBodyAccMag-std()" <br >
  35
- "tGravityAccMag-mean()"
+ "tGravityAccMag-mean()" <br >
  36
- "tGravityAccMag-std()"
+ "tGravityAccMag-std()" <br >
  37
- "tBodyAccJerkMag-mean()"
+ "tBodyAccJerkMag-mean()" <br >
  38
- "tBodyAccJerkMag-std()"
+ "tBodyAccJerkMag-std()" <br >
  39
- "tBodyGyroMag-mean()"
+ "tBodyGyroMag-mean()" <br >
  40
- "tBodyGyroMag-std()"
+ "tBodyGyroMag-std()" <br >
  41
- "tBodyGyroJerkMag-mean()"
+ "tBodyGyroJerkMag-mean()" <br >
  42
- "tBodyGyroJerkMag-std()"
+ "tBodyGyroJerkMag-std()" <br >
  43
- "fBodyAcc-mean()-X"
+ "fBodyAcc-mean()-X" <br >
  44
- "fBodyAcc-mean()-Y"
+ "fBodyAcc-mean()-Y" <br >
  45
- "fBodyAcc-mean()-Z"
+ "fBodyAcc-mean()-Z" <br >
  46
- "fBodyAcc-std()-X"
+ "fBodyAcc-std()-X" <br >
  47
- "fBodyAcc-std()-Y"
+ "fBodyAcc-std()-Y" <br >
  48
- "fBodyAcc-std()-Z"
+ "fBodyAcc-std()-Z" <br >
  49
- "fBodyAcc-meanFreq()-X"
+ "fBodyAcc-meanFreq()-X" <br >
  50
- "fBodyAcc-meanFreq()-Y"
+ "fBodyAcc-meanFreq()-Y" <br >
  51
- "fBodyAcc-meanFreq()-Z"
+ "fBodyAcc-meanFreq()-Z" <br >
  52
- "fBodyAccJerk-mean()-X"
+ "fBodyAccJerk-mean()-X" <br >
  53
- "fBodyAccJerk-mean()-Y"
+ "fBodyAccJerk-mean()-Y" <br >
  54
- "fBodyAccJerk-mean()-Z"
+ "fBodyAccJerk-mean()-Z" <br >
  55
- "fBodyAccJerk-std()-X"
+ "fBodyAccJerk-std()-X" <br >
  56
- "fBodyAccJerk-std()-Y"
+ "fBodyAccJerk-std()-Y" <br >
  57
- "fBodyAccJerk-std()-Z"
+ "fBodyAccJerk-std()-Z" <br >
  58
- "fBodyAccJerk-meanFreq()-X"
+ "fBodyAccJerk-meanFreq()-X" <br >
  59
- "fBodyAccJerk-meanFreq()-Y"
+ "fBodyAccJerk-meanFreq()-Y" <br >
  60
- "fBodyAccJerk-meanFreq()-Z"
+ "fBodyAccJerk-meanFreq()-Z" <br >
  61
- "fBodyGyro-mean()-X"
+ "fBodyGyro-mean()-X" <br >
  62
- "fBodyGyro-mean()-Y"
+ "fBodyGyro-mean()-Y" <br >
  63
- "fBodyGyro-mean()-Z"
+ "fBodyGyro-mean()-Z" <br >
  64
- "fBodyGyro-std()-X"
+ "fBodyGyro-std()-X" <br >
  65
- "fBodyGyro-std()-Y"
+ "fBodyGyro-std()-Y" <br >
  66
- "fBodyGyro-std()-Z"
+ "fBodyGyro-std()-Z" <br >
  67
- "fBodyGyro-meanFreq()-X"
+ "fBodyGyro-meanFreq()-X" <br >
  68
- "fBodyGyro-meanFreq()-Y"
+ "fBodyGyro-meanFreq()-Y" <br >
  69
- "fBodyGyro-meanFreq()-Z"
+ "fBodyGyro-meanFreq()-Z" <br >
  70
- "fBodyAccMag-mean()"
+ "fBodyAccMag-mean()" <br >
  71
- "fBodyAccMag-std()"
+ "fBodyAccMag-std()" <br >
  72
- "fBodyAccMag-meanFreq()"
+ "fBodyAccMag-meanFreq()" <br >
  73
- "fBodyBodyAccJerkMag-mean()"
+ "fBodyBodyAccJerkMag-mean()" <br >
  74
- "fBodyBodyAccJerkMag-std()"
+ "fBodyBodyAccJerkMag-std()" <br >
  75
- "fBodyBodyAccJerkMag-meanFreq()"
+ "fBodyBodyAccJerkMag-meanFreq()" <br >
  76
- "fBodyBodyGyroMag-mean()"
+ "fBodyBodyGyroMag-mean()" <br >
  77
- "fBodyBodyGyroMag-std()"
+ "fBodyBodyGyroMag-std()" <br >
  78
- "fBodyBodyGyroMag-meanFreq()"
+ "fBodyBodyGyroMag-meanFreq()" <br >
  79
- "fBodyBodyGyroJerkMag-mean()"
+ "fBodyBodyGyroJerkMag-mean()" <br >
  80
- "fBodyBodyGyroJerkMag-std()"
+ "fBodyBodyGyroJerkMag-std()" <br >
  81
- "fBodyBodyGyroJerkMag-meanFreq()"
+ "fBodyBodyGyroJerkMag-meanFreq()" <br >
