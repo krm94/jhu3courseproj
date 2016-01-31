@@ -65,11 +65,15 @@ for(i in 1:nrow(act_labels)) {
   dt[dt$activity_id == code, 2] <- name
 }
 
+#Extracting only the mean and std variables into another data set called sub_dt
+sub_dt<-dt[,grep("mean|std|Subject|activity_id", colnames(dt))]
+
+
 
 #Creating the melt dataset using subject and activity as id's.
 id = c("Subject", "activity_id")
-other_var = setdiff(colnames(dt), id)
-melt_data = melt(dt, id = id, measure.vars = other_var)
+other_var = setdiff(colnames(sub_dt), id)
+melt_data = melt(sub_dt, id = id, measure.vars = other_var)
 
 #Recasting the melt dataset to create the summarized tidy dataset.
 tidy_data   = dcast(melt_data, Subject + activity_id ~ variable, mean)
