@@ -60,9 +60,9 @@ act_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 
 #Converting the different activity codes to their respective activity names.
 for(i in 1:nrow(act_labels)) {
-  code <- as.numeric(act_labels[i,1])
+  subject <- as.numeric(act_labels[i,1])
   name <- as.character(act_labels[i,2])
-  dt[dt$activity_id == code, 2] <- name
+  dt[dt$activity_id == subject, 2] <- name
 }
 
 #Extracting only the mean and std variables into another data set called sub_dt
