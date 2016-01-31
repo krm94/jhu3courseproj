@@ -1,5 +1,13 @@
 #CodeBook
 
+##Raw Data
+
+Data collected from the follwing url - "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+
+##Script used to clean data  <br>
+
+The run_analysis.R file in this repository is used to clean the messy data sets and merge them into a single tidy data set.
+
 ##Variables of the tidy data set
  1
  "Subject" <br >
