@@ -1,30 +1,166 @@
 #CodeBook
 
-##Describes the variables, the data, and any transformations or work that was performed to clean up the data in run_analysis.R.
+##Variables 
 
-###Variables used :-
-
-####Data Frames:
-
-1. X_train : Original dataset read from './train/X_train.txt'.
-2. y_train : Contains the training labels stored in './train/y_train.txt'.
-3. s_train : Contains data that identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-4. train : Combines X_train,y_train and s_train into one dataset.
-5. X_test : Original dataset read from './test/X_test.txt'.
-6. y_test : Contains the test labels stored in './test/y_test.txt'.
-7. s_test: Contains data that identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-8. test : Combines X_test,y_test and s_test into one dataset.
-9. dt : Merging test and train into a single dataset.
-10. features : Contains the names of the variables(column names) measured in train and test dataset.
-11. act_labels : Dataset that links the class labels with their activity name.
-12. sub_dt : Subeset of the original dataset dt. It has only mean and std measurements.
-13. melt_data : Melted dataset formed using the melt function that contains Subject and activity_id as id's and all other variables as measured variables.
-14. tidy_data : Final data set to be submitted. Created by using the dcast() function to cast melt_data into a tidy data set which is grouped by Subject and activity_id and the means of each varibale of identical observations to give a single unique observation.
-
-####Vectors: 
-1. subject : Numeric Variable that temporarily stores the subject code of the activity name.
-2. name : Name of the activity corresponding to the subject.
-3. id : Id's used to melt sub_dt to create a melt.
-4. other_var : All other columns of sub_dt(other than id) dataset which are used as variables in the melt() fucntion.
- 
- 
+ 1
+ "Subject"
+ 2
+ "activity_id"
+ 3
+ "tBodyAcc-mean()-X"
+ 4
+ "tBodyAcc-mean()-Y"
+ 5
+ "tBodyAcc-mean()-Z"
+ 6
+ "tBodyAcc-std()-X"
+ 7
+ "tBodyAcc-std()-Y"
+ 8
+ "tBodyAcc-std()-Z"
+ 9
+ "tGravityAcc-mean()-X"
+ 10
+ "tGravityAcc-mean()-Y"
+ 11
+ "tGravityAcc-mean()-Z"
+ 12
+ "tGravityAcc-std()-X"
+ 13
+ "tGravityAcc-std()-Y"
+ 14
+ "tGravityAcc-std()-Z"
+ 15
+ "tBodyAccJerk-mean()-X"
+ 16
+ "tBodyAccJerk-mean()-Y"
+ 17
+ "tBodyAccJerk-mean()-Z"
+ 18
+ "tBodyAccJerk-std()-X"
+ 19
+ "tBodyAccJerk-std()-Y"
+ 20
+ "tBodyAccJerk-std()-Z"
+ 21
+ "tBodyGyro-mean()-X"
+ 22
+ "tBodyGyro-mean()-Y"
+ 23
+ "tBodyGyro-mean()-Z"
+ 24
+ "tBodyGyro-std()-X"
+ 25
+ "tBodyGyro-std()-Y"
+ 26
+ "tBodyGyro-std()-Z"
+ 27
+ "tBodyGyroJerk-mean()-X"
+ 28
+ "tBodyGyroJerk-mean()-Y"
+ 29
+ "tBodyGyroJerk-mean()-Z"
+ 30
+ "tBodyGyroJerk-std()-X"
+ 31
+ "tBodyGyroJerk-std()-Y"
+ 32
+ "tBodyGyroJerk-std()-Z"
+ 33
+ "tBodyAccMag-mean()"
+ 34
+ "tBodyAccMag-std()"
+ 35
+ "tGravityAccMag-mean()"
+ 36
+ "tGravityAccMag-std()"
+ 37
+ "tBodyAccJerkMag-mean()"
+ 38
+ "tBodyAccJerkMag-std()"
+ 39
+ "tBodyGyroMag-mean()"
+ 40
+ "tBodyGyroMag-std()"
+ 41
+ "tBodyGyroJerkMag-mean()"
+ 42
+ "tBodyGyroJerkMag-std()"
+ 43
+ "fBodyAcc-mean()-X"
+ 44
+ "fBodyAcc-mean()-Y"
+ 45
+ "fBodyAcc-mean()-Z"
+ 46
+ "fBodyAcc-std()-X"
+ 47
+ "fBodyAcc-std()-Y"
+ 48
+ "fBodyAcc-std()-Z"
+ 49
+ "fBodyAcc-meanFreq()-X"
+ 50
+ "fBodyAcc-meanFreq()-Y"
+ 51
+ "fBodyAcc-meanFreq()-Z"
+ 52
+ "fBodyAccJerk-mean()-X"
+ 53
+ "fBodyAccJerk-mean()-Y"
+ 54
+ "fBodyAccJerk-mean()-Z"
+ 55
+ "fBodyAccJerk-std()-X"
+ 56
+ "fBodyAccJerk-std()-Y"
+ 57
+ "fBodyAccJerk-std()-Z"
+ 58
+ "fBodyAccJerk-meanFreq()-X"
+ 59
+ "fBodyAccJerk-meanFreq()-Y"
+ 60
+ "fBodyAccJerk-meanFreq()-Z"
+ 61
+ "fBodyGyro-mean()-X"
+ 62
+ "fBodyGyro-mean()-Y"
+ 63
+ "fBodyGyro-mean()-Z"
+ 64
+ "fBodyGyro-std()-X"
+ 65
+ "fBodyGyro-std()-Y"
+ 66
+ "fBodyGyro-std()-Z"
+ 67
+ "fBodyGyro-meanFreq()-X"
+ 68
+ "fBodyGyro-meanFreq()-Y"
+ 69
+ "fBodyGyro-meanFreq()-Z"
+ 70
+ "fBodyAccMag-mean()"
+ 71
+ "fBodyAccMag-std()"
+ 72
+ "fBodyAccMag-meanFreq()"
+ 73
+ "fBodyBodyAccJerkMag-mean()"
+ 74
+ "fBodyBodyAccJerkMag-std()"
+ 75
+ "fBodyBodyAccJerkMag-meanFreq()"
+ 76
+ "fBodyBodyGyroMag-mean()"
+ 77
+ "fBodyBodyGyroMag-std()"
+ 78
+ "fBodyBodyGyroMag-meanFreq()"
+ 79
+ "fBodyBodyGyroJerkMag-mean()"
+ 80
+ "fBodyBodyGyroJerkMag-std()"
+ 81
+ "fBodyBodyGyroJerkMag-meanFreq()"
