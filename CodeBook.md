@@ -4,7 +4,7 @@
 
 ###Variables used :-
 
-Data Frames:
+####Data Frames:
 
 1. X_train : Original dataset read from './train/X_train.txt'.
 2. y_train : Contains the training labels stored in './train/y_train.txt'.
@@ -21,7 +21,7 @@ Data Frames:
 13. melt_data : Melted dataset formed using the melt function that contains Subject and activity_id as id's and all other variables as measured variables.
 14. tidy_data : Final data set to be submitted. Created by using the dcast() function to cast melt_data into a tidy data set which is grouped by Subject and activity_id and the means of each varibale of identical observations to give a single unique observation.
 
-Vectors: 
+####Vectors: 
 1. subject : Numeric Variable that temporarily stores the subject code of the activity name.
 2. name : Name of the activity corresponding to the subject.
 3. id : Id's used to melt sub_dt to create a melt.
