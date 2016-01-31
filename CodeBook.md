@@ -10,9 +10,9 @@ The run_analysis.R file in this repository is used to clean the messy data sets 
 
 ##Variables of the tidy data set
  1
- "Subject" <br >
+ "Subject" :- The participant ID <br >
  2
- "activity_id" <br >
+ "activity_id" :- The activity they are performing. <br >
  3
  "tBodyAcc-mean()-X" <br >
  4
